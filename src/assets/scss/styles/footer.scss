@@ -1,0 +1,69 @@
+footer {
+	.footer-content {
+		background: rgba(0, 0, 0, 0.15);
+		width: 100%;
+		height: 100%;
+		padding: 1rem 2.2rem;
+		.footer-gameprovider-slider {
+			text-align: center;
+			.gameprovider-imgs img {
+				width: 100px;
+				margin: 0px 5px;
+			}
+		}
+		.footer-paymentmethod {
+			text-align: center;
+			.paymentmethods-imgs img {
+				width: 100px;
+				margin: 0px 20px;
+				height: 40px;
+			}
+		}
+		.footer-logo {
+			text-align: center;
+			img{
+				width: 150px;
+				height: 63px;
+			}
+		}
+		.footer-logo-text {
+			text-align: center;
+			span {
+				display: inline-block;
+			}
+		}
+		.footer-menu {
+			text-align: center;
+			.ul-list {
+				display: inline-block;
+				text-align: left;
+				padding: 0px;
+				li{
+					list-style: none;
+					a{
+						font-size: 0.9rem;
+					}
+					a:hover {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.footer-socials-feed {
+			text-align: center;
+			svg {
+				margin: 0px 2px;
+			}
+		}
+	}
+    #footer-hidden {
+        height: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+	footer {
+		padding-top: 70px !important;
+	}
+}

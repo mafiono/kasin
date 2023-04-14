@@ -1,0 +1,59 @@
+.igamez-icon{
+    color: $buttonColor !important;
+}
+.igamez-sport-background{
+    background-color: $sports-background !important;
+}
+.igamez-button{
+    border-color: $buttonBorderColor !important;
+    background-color: $buttonColor !important;
+}
+.igamez-button:hover{
+    box-shadow: 0 8px 25px -8px $buttonBorderColor !important;
+}
+
+.igamez-button:active{
+    background-color: $buttonActiveColor !important;
+}
+
+.vx-pagination li.active a{
+    background-color: $buttonColor !important;
+}
+
+.vx-pagination li:not(.disabled):not(.active):hover a {
+    color: $buttonColor !important;
+}
+
+.vx-radio-primary input:checked ~ .vx-radio .vx-radio--circle{
+    background: $buttonColor !important;
+}
+
+.react-toggle-wrapper .react-toggle.react-toggle--checked .react-toggle-track{
+    background-color: $buttonColor !important;
+}
+
+.igamez-border{
+    border-color: $buttonColor !important;
+}
+
+.vertical-layout .main-menu.theme-warning .navigation .nav-item .menu-content li.active {
+    background: linear-gradient(118deg, $buttonColor, rgba($buttonColor, 0.7)) !important;
+    box-shadow: 0 0 10px 1px rgba($buttonColor, 0.7) !important;
+}
+.vertical-layout .main-menu.theme-warning .navigation .nav-item.active a{
+    background: linear-gradient(118deg, $buttonColor, rgba($buttonColor, 0.7)) !important;
+    box-shadow: 0 0 10px 1px rgba($buttonColor, 0.7) !important;
+}
+
+
+.iWQazw::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    // position: relative;
+    // bottom: -0.125rem;
+    left: 0.25rem;
+    right: 0.25rem;
+    border-bottom: 0.25rem dotted $sports-background1;
+    z-index: 1;
+}

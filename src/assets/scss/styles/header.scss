@@ -1,0 +1,196 @@
+.header-nav-bar-menu{
+    background-color: $headMenuColor !important;
+    height: 40px;
+    position: absolute!important;
+    top: 76px;
+    left: 0px;
+    width: 100%;
+    z-index: 99 !important;
+    text-align: center;
+    .header-nav-bar-item-group {
+        width: auto !important;
+        display: inline-flex;
+        .header-nav-bar-item {
+            padding: 5px 10px;
+            font-size: 20px;
+            svg,span {
+                color: #e6e6e6 !important;
+            }
+        }
+        .header-nav-bar-items {
+            svg,span {
+                transition: color .3s;
+                color: $AheadMenuFontColor !important;
+            }
+        }
+        .header-nav-bar-item:hover, .header-nav-bar-item-active {
+            @extend .header-nav-bar-items;
+        }
+        
+        .header-nav-bar-item a:hover {
+            color: $headMenuFontColor !important;
+        }
+        
+        .header-nav-bar-item a {
+            color: $headMenuFontColor !important;
+            font-size: 17px;
+        }
+    }
+}
+
+.header-navbar{
+    height: 76px !important;
+    .header-nav-bar-brand {
+        overflow: hidden;
+        padding: 0px 3%;
+        margin: 0px;
+        height: 100%;
+    }
+    .header-nav-bar-user {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        .guest-links{
+            .dropdown-language{
+                list-style: none;
+            }
+            .nav-link{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .header-user-info {
+        display: flex;
+        align-items: center;
+    }
+    .header-user-balance {
+        padding: 12px 10px;
+    }
+    
+    .header-user-balance h5 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .header-time-bar {
+        display: flex;
+        .header-clock-time {
+            display: flex;
+            margin: .275rem;
+            height: 80%;
+        }
+        .header-clock-time svg {
+            font-size: 30px;
+            margin: 0.375rem;
+        }
+        .header-clock-time h1 {
+            line-height: 1.4;
+            margin: 0px;
+        }
+        .header-clock-def {
+            color: $clockColor !important;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        .header-clock-mon span {
+            color: $clockColor !important;
+            font-weight: bold;
+        }
+        .header-clock-year {
+            font-weight: bold;
+            display: table;
+            height: 100% !important;
+        }
+        .header-clock-year span {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px !important;
+            font-size: 1.5rem;
+        }
+        
+        .header-clock-date {
+            margin: .375rem;
+        }
+    }
+    .web-site-logo{
+        width : 190px;
+    }
+}
+@media (max-width: 1125px) {
+    .header-navbar{
+        .header-time-bar {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1019px) {
+    .header-nav-bar-menu {
+        top: calc( 100% - 70px);
+        width: 100vw;
+        height: 70px;
+        overflow-X: auto !important;
+        overflow: hidden;
+        position: fixed !important;
+        background-color: $headMenuColor2 !important;
+        .header-nav-bar-item-group a {
+            padding: 10px;
+        }
+        span {
+            color: $AheadMenuFontColor;
+            font-size: .8rem;
+            font-weight: 100;
+        }
+        svg {
+            color: $AheadMenuFontColor;
+            width: 100%;
+            display: inherit;
+            height: 1.8rem;
+        }
+    }
+    .header-navbar{
+        height: 63px !important;
+        .web-site-logo{
+            width: 150px !important;
+        }
+        .header-deposit-button, .btn-register, .btn-login, .btn-download{
+            height: 30px !important;
+            padding: 3px 9px !important;
+            font-size: 11px;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+    .header-navbar{
+        .web-site-logo{
+            width: 120px !important;
+        }
+    }
+    .header-deposit-button-1{
+        height: 20px !important;
+        padding: 3px 9px !important;
+        font-size: 10px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+    .header-user-info{
+        h6{
+            font-size: 0.8rem !important;
+        }
+    }
+    
+}
+
+@media (max-width: 414px) {
+    .header-user-balance{
+        display: none;
+    }
+}

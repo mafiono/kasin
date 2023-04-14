@@ -1,0 +1,451 @@
+/* casino-header-slider */
+
+.casino-header-slider{
+    min-height: 25vw;
+    .swiper-container{
+        width: 100% !important;
+        .swiper-slide{
+            width: 100% !important;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+    
+.casino-header-slider-def {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    transform: skewX(17deg);
+    left: -20%;
+    background-color: $sliderdefBackgroundColor;
+    z-index: 1;
+    .casino-header-slider-def-h {
+        position: absolute;
+        top: 50%;
+        right: -20%;
+        padding: 0.1vw 1vw;
+        opacity: 0.7;
+        background-color: $sliderdefHBackgroundColor;
+        h1 {
+            float: right;
+            transform: skew(-17deg);
+            font-size: 2vw;
+            margin: 0px;
+            font-weight: 100;
+        }
+    }
+    .casino-header-slider-def-c {
+        position: absolute;
+        top: 55%;
+        right: 0vw;
+        padding-top: 1vw;
+        transform: skew(-17deg);
+        h5 {
+            border-bottom: 2px solid $sliderdefHBackgroundColor;
+            font-size: 1.2vw;
+        }
+        span {
+            font-size: 1.7vw;
+        }
+        button{
+            margin: 0 !important;
+            background-color:$buttonColor !important;
+            border-color:$buttonBorderColor !important;
+        }
+        button:hover, button:active {
+            background-color:$buttonColor !important;
+            border-color:$buttonBorderColor !important;
+            box-shadow: 0 8px 25px -8px $buttonBorderColor !important;
+        }
+    }
+}
+.marqueetext{
+    padding: 0.4rem;
+}
+
+@media (max-width: 1000px) {
+    .casino-header-slider-def-c button {
+        font-size: 1.0vw;
+        right: 10px !important;
+        padding: 0.5rem 1rem !important;
+    }
+}
+/* casino-header-slider */
+
+
+@media (max-width: 650px) {
+    .casino-header-slider{
+        margin-bottom: 0rem;
+    }
+    .marqueetext{
+        marquee{
+            span{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .casino-header-slider-def-h {
+        h1 {
+            strong{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .casino-header-slider-def-c button {
+        font-size: 0.6rem;
+    }
+}
+
+
+/* casino-select-picker */
+.casino-select-picker{
+    margin: 1rem 0 0 0;
+    padding: 0;
+    width: 100%;
+
+    /* casino-select-picker */
+    .multi-select {
+        input {
+            background-color: $casinoSelectPickerColor !important;
+            color: white !important;
+
+        }
+        .go2646822163{
+            background-color:$casinoSelectPickerColor !important;
+            border: 1px solid  $casinoSelectPickerColor !important;
+        }
+        .go2646822163:focus-within {
+            box-shadow: $casinoSelectPickerColor 0 0 0 1px !important;
+            border-color: $casinoSelectPickerColor !important;
+        }
+        .go3425554998{
+            *{
+                background-color:$casinoSelectPickerColor !important;
+                border: 1px solid  $casinoSelectPickerColor !important;
+            }
+            
+            .go1075022653{
+                input{
+                    background-color:$casinoSelectPickerColor !important;
+                    border: 1px solid  $casinoSelectPickerColor !important;
+                }
+                border-bottom: 1px solid $casinoSelectPickerBorderColor !important;
+            }
+        }
+    }
+    .dropdown-container {
+        padding: 10px 0px;
+        border-radius: 50px;
+    }
+    .dropdown-heading {
+        margin: 0px 10px;
+        width: calc(100% - 20px);
+    }
+    .menu {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        background-color: $casinoSelectPickerColor;
+        border-radius: 50px;
+        ul{
+            white-space: nowrap;
+            overflow: auto;
+            flex-grow: 2;
+            list-style-type: none;
+            background-repeat: no-repeat;
+            padding: 0;
+            margin: 0;
+            border-radius: 50px;
+            li {
+                color: #8f99a3;
+                padding: 10px 15px;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                transition: all .3s ease;
+                background-repeat: no-repeat;
+                margin: 0;
+                text-transform: capitalize;
+            }
+            li:hover {
+                color: white;
+            }
+            .selected {
+                color: white;
+            }
+        }
+    }
+
+
+    // .multi-select {
+    //     --rmsc-main: #113536 !important;
+    //     --rmsc-hover: #103e40 !important;
+    //     --rmsc-selected: #113536 !important;
+    //     --rmsc-border: #113536 !important;
+    //     --rmsc-gray: #ccc !important;
+    //     --rmsc-bg: #102226 !important;
+    //     --rmsc-p: 10px !important;
+    //     --rmsc-radius: 4px !important;
+    //     --rmsc-h: 38px !important;
+    //     input {
+    //         background-color: #102226 !important;
+    //         color: white !important;
+    //     }
+    // }
+
+    .multi-select {
+        --rmsc-main: #10163a !important;
+        --rmsc-hover: #262c49 !important;
+        --rmsc-selected: #10163a !important;
+        --rmsc-border: #10163a !important;
+        --rmsc-gray: #ccc !important;
+        --rmsc-bg: #10163a !important;
+        --rmsc-p: 10px !important;
+        --rmsc-radius: 4px !important;
+        --rmsc-h: 38px !important;
+        input {
+            background-color: #10163a !important;
+            color: white !important;
+        }
+    }
+    
+    .go2646822163 {
+        z-index: 99;
+        div {
+            div {
+                div {
+                    div {
+                        padding: 0px 0px 0px 1rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* casino-select-picker */
+
+
+
+
+
+/* casino-item-group */
+.casino-item-group{
+    min-height: 10rem;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    .item{
+        padding : 10px;
+        .background{
+            background-size: cover;
+            padding: 35% 0;
+            border-radius: 10px;
+            background-position:center;
+            height: 100%;
+            width: 100%;
+        }
+        .prev-icon{
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position:absolute;
+            z-index:-1;
+            color: $casinoPrevIconColor;
+        }
+        .heart {
+            top: 4px;
+            z-index: 10;
+            position: absolute;
+			padding: 15px 15px;
+			width: 100%;
+			text-align: left;
+			transition: 0.6s;
+			span {
+                font-size: 12px;
+				padding: 3px 7px;
+				color: #ccc;
+				border-radius: 20px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+        .casino-innor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            margin: 10px;
+            transition: 0.6s;
+            border-radius: 10px;
+            .button-group {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                vertical-align: middle;
+                transition: 0.6s;
+                opacity: 0;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    background-color:$buttonColor !important;
+                    border-color:$buttonBorderColor !important;
+                }
+                button:hover{
+                    box-shadow: 0 8px 25px -8px $buttonBorderColor !important;
+                }
+                
+                button:active {
+                    background-color:$buttonActiveColor !important;
+                }
+                div {
+                    .real-play {
+                        padding: 0.9vw !important;
+                        margin-bottom: 0.5vw;
+                    }
+                    .play {
+                        padding: 0.5vw !important;
+                    }
+                    button {
+                        font-size: 0.9vw !important;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+                @media (max-width: 767px) {
+                    div {
+                        .play {
+                            padding: 0.8rem 1rem !important;
+                            margin-top: 1rem;
+                        }
+                        .real-play {
+                            padding: 1rem 1.5rem !important;
+                        }
+                        button {
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+            }
+
+            .title-group {
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                width: 100%;
+                padding: 5px 10px;
+                border-radius: 0px 0px 10px 10px;
+                transition: 0.6s;
+                position: absolute;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                .left {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 90%;
+                    float: left;
+                    font-weight: bold;
+                }
+                .right {
+                    width: 10%;
+                    float: right;
+                    font-weight: bold;
+                }
+            }
+
+            .live-title-group {
+                opacity: 1 !important;
+                display: inline-block;
+                width: 100%;
+                padding: 5px 10px;
+                border-radius: 0px 0px 10px 10px;
+                transition: 0.6s;
+                position: absolute;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                .left {
+                    line-height: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 90%;
+                    float: left;
+                    font-weight: bold;
+                }
+                .right {
+                    width: 10%;
+                    float: right;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .casino-innor:hover {
+            cursor: pointer;
+            background-color: $casinoInfoBackgroundColor;
+            .title-group {
+                opacity: 1;
+            }
+            .button-group {
+                opacity: 1;
+            }
+        }
+    }
+}
+/* casino-item-group */
+
+
+
+
+
+/* casino-play-screen */
+.pw-overlay{
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    padding: 0%;
+    background: #1a1a1a;
+    text-align: center;
+    .iframe-container.card {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 8px;
+        padding-right: 8px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 5px;
+        margin: 0px !important;
+        height: 100%;
+        width: 100% !important;
+        display: inline-flex;
+        .card-header{
+            width: 100%;
+            background-color: rgba(16,34,38,0)!important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .card-body{
+            height:calc(100% - 80px);
+            padding: 0;
+        }
+    }
+}
+
+/* casino-play-screen */

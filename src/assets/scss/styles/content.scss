@@ -1,0 +1,232 @@
+$orange: $buttonColor; //$warning
+
+.igamez-satta-border{
+    border: 1px solid $orange !important;
+    margin-top: 0.5rem;
+}
+
+.vertical-layout.navbar-sticky .profile-content {
+    padding-top: 8.3rem;
+}
+
+.vertical-layout.navbar-static .profile-content {
+    padding-top: 2.85rem;
+}
+.profile-content{
+    min-height: 100vh;
+}
+
+.vertical-layout.navbar-sticky .sports-content {
+    padding-top: 5.4rem;
+}
+
+.vertical-layout.navbar-static .sports-content {
+    padding-top: 0rem;
+}
+
+.bazaaritem{
+    font-size : 0.8rem;
+    padding:0.9rem 0rem;
+    margin:.375rem;
+    cursor: pointer;
+    color: white;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1019px) {
+    .horizontal-layout.navbar-sticky .app-content, .vertical-layout.navbar-sticky .profile-content{
+        padding-top: 4.5rem !important;
+    }
+    .horizontal-layout.navbar-static .app-content, .vertical-layout.navbar-static .profile-content{
+        padding-top: 0 !important;
+    } 
+}
+
+@media (max-width: 575.98px) {
+    .content .content-wrapper{
+        padding: 0px;
+    }
+}
+
+
+#admindata_table > div > div > div{
+    position: relative !important;
+    width: 100% !important;
+    display: table !important;
+}
+
+#admindata_table > div:first-child{
+    overflow : hidden !important;
+}
+
+#admindata_table > div > div{
+    overflow-y : hidden;
+    position: relative !important;
+    width: 100% !important;
+    display: block !important;
+    overflow-x: auto !important;
+}
+
+.w-100{
+    width : 100% !important;
+}
+
+.satta{
+    .bazaaritem-header{
+        font-size: 1rem;
+        svg{
+            font-size: 1.5rem;
+        }
+    }
+    .bazaaritem-body{
+
+        .bazaaritem-title{
+            font-size: 1.3rem;
+            color :$orange;
+        }
+    }
+    .tblbazaarheader{
+        display: inline-flex;
+        width: 11%;
+        text-align: center;
+        background-color:$orange;
+        font-size: 0.8rem;
+        height: 100%;
+        color: white;
+        padding: 0.8rem;
+    }
+    .tblbazaaritem{
+        display: inline-block;
+        width: 11%;
+        text-align: center;
+        font-size: 0.9rem;
+        color: white;
+        margin-top: 0.5rem;
+        padding-right: 2px;
+        .child{
+            border : 1px solid $orange;
+            width: 100%;
+            cursor: pointer;
+            display: block;
+            height: 100%;
+            align-items : center;
+            padding: 0.3rem 0.1rem 0.3rem 0.1rem;
+            p{
+                margin: 0px;
+            }
+
+            span{
+                font-size: 0.9rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .child:hover{
+            border-color: $orange !important;
+            box-shadow: 0 8px 25px -8px rgba($primarycolor,1);
+        }
+        .child1:hover{
+            border-color: $orange !important;
+            box-shadow: 0 8px 25px -8px rgba($primarycolor,1);
+        }
+        
+        .child1{
+            border : 2px solid $orange;
+            width: calc(50% - 2px);
+            display: inline-block;
+            height: 100%;
+            cursor: pointer;
+            padding: 0.1rem;
+            p{
+                margin: 0px;
+            }
+        }
+        .child1:last-child{
+            margin-left: 2px;
+            
+        }
+    }
+    .satta-events-items{
+        border: 0.5px solid $orange !important;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        background-color: $sports-background1;
+        .OutcomeName{
+            color: $fontColor2;
+        }
+    }
+    .satta-events-items:hover{
+        border-color: #9b928a !important;
+        box-shadow: 0 8px 25px -8px rgba($primarycolor,1);
+        background: $orange !important;
+    }
+    .satta-events-items-active{
+        background-color: $orange !important;
+        .OutcomeName{
+            color: #000 !important;
+        }
+    }
+
+    .sattaitems{
+        margin-left: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .sattaitems{
+            margin-left: 0rem !important;
+            margin-top: 1rem !important;
+        }   
+    }
+}
+
+
+.color-white{
+    color: white !important;
+}
+
+
+
+
+.select__menu {
+    // z-index: 9999999999999999 !important;
+    // position: fixed;
+    color: white;
+    max-height: 150px !important;
+    background-color:#111 !important;
+    div{
+        background-color:#111 !important;
+    }
+    .select__menu-list{
+    max-height: 150px !important;
+
+    }
+  }
+  
+  .select__option {
+    z-index: 999 !important;
+  }
+  .select__option:hover{
+    background-color: #1a1a1a  !important;
+  }
+
+  .select__option--is--focused{
+    background-color: #1a1a1a !important;
+    .select__option{
+        background-color: #1a1a1a !important;
+    }
+}
+
+.select__control--is--focused:focus{
+    background:  #1a1a1a !important;
+}
+.css-1pahdxg-control{
+    // border: #111 !important;
+}

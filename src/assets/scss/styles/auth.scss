@@ -1,0 +1,73 @@
+.auth-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    z-index: 1000;
+    display: initial;
+    top: 0;
+    left: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPU1rN4CgAClQF43CvNlgAAAABJRU5ErkJggg==);
+    overflow-y: scroll;
+    .card{
+        min-width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0px;
+        max-width: 360px;
+        .card-header{
+            .card-title{
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+            }
+        }
+        .card-body{
+            display: flex;
+            align-items: center;
+            input{
+                border-radius: 0px;
+            }
+        }
+        .card-footer{
+            border-top: 0px !important;
+        }
+        .captcha-png{
+            width: 100%;
+            max-height: 38px;
+        }
+    }
+    .register{
+        min-width:280px !important;
+        max-width: 500px !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .auth-form{
+        .card{
+            min-width: 100vw !important;
+            min-height: 100vh !important;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        :not(.register){
+            .card-body{
+                max-height:150px !important;
+            }
+        }
+    }
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}

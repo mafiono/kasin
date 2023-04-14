@@ -1,0 +1,110 @@
+.casino-bonus-page{
+    .header{
+        background-color: $bounusBorderColor;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        span {
+            width: calc((100% - 30px)/3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+    .body{
+        .item,*{
+            text-align: center;
+        }
+        p{
+            font-size: 12px;
+        }
+        .item{
+            .item-header{
+                padding: 5px 10px;
+                margin: 10px 0;
+                background-color: $bounusBackgroundColor;
+                border: 1px soild $bounusBorderColor;
+                border-radius: 5px;
+                display: flex;
+                span{
+                    width: calc((100% - 30px)/3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                }
+                span:last-child{
+                    width: 30px;
+                }
+            }
+            .item-body{
+                border:1px solid $bounusBorderColor;
+                border-radius: 5px;
+                margin:5px;
+                div:first-child{
+                    padding: 10px;
+                    div{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    div:first-child{
+                        align-items: flex-end;
+                    }
+                    div:last-child{
+                        align-items: flex-start;
+                    }
+                }
+                div:last-child{
+                    display: flex;
+                    .body{
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        width: 100%;
+                        display: flex;
+                        .item{
+                            width: 100%;
+                            padding-top: 10px;
+                            margin: 0px;
+                            padding: 5px;
+                            font-size: 16px;
+                            color: white;
+                            border-bottom: 1px solid $bounusBorderColor;
+                            display: flex;
+                            align-items: center;
+                            div{
+                                justify-content: center;
+                                align-items: center;
+                                // height: 100%;
+                            }
+                        }
+                        .item:first-child{
+                            border-bottom-width: 3px;
+                        }
+                        .item:last-child{
+                            border-bottom-width: 0px;
+                            padding-bottom: 0px !important;
+                            div{
+                                padding: 0px;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dz-thumb{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 35vh;
+        border-radius: 3px;
+    }
+}
